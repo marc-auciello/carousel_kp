@@ -1,31 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <div class="carousel">
+   <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="css/style.css" />
+      <title>Document</title>
+   </head>
+   <body>
+      <div class="carousel">
+         <button class="carousel__button carousel__button--left">
+            <img src="img/left-arrow.svg" alt="" />
+         </button>
 
-        <button class="carousel__button carousel__button--left"><img src="img/left-arrow.svg" alt=""></button>
-
-        <div class="carousel__track-container">
+         <div class="carousel__track-container">
             <ul class="carousel__track">
-                <li class="carousel__slide"><img src="img/image_01.jpg" alt="building and tree during daytime"></li>
-                <li class="carousel__slide"><img src="img/image_02.jpg" alt="aerial photography of land with high rise buildings"></li>
-                <li class="carousel__slide"><img src="img/image_03.jpg" alt="person walking down a street in a city"></li>
+               <li class="carousel__slide">
+                  <img
+                     class="carousel__image"
+                     src="img/image_01.jpg"
+                     alt="building and tree during daytime"
+                  />
+               </li>
+               <li class="carousel__slide">
+                  <img
+                     class="carousel__image"
+                     src="img/image_02.jpg"
+                     alt="aerial photography of land with high rise buildings"
+                  />
+               </li>
+               <li class="carousel__slide">
+                  <img
+                     class="carousel__image"
+                     src="img/image_03.jpg"
+                     alt="person walking down a street in a city"
+                  />
+               </li>
             </ul>
-        </div>
+         </div>
 
-        <button class="carousel__button carousel__button--right"><img src="img/right-arrow.svg" alt=""></button>
+         <button class="carousel__button carousel__button--right">
+            <img src="img/right-arrow.svg" alt="" />
+         </button>
 
-        <div class="carousel__nav">
+         <div class="carousel__nav">
+            <button class="carousel__indicator current-slide"></button>
             <button class="carousel__indicator"></button>
             <button class="carousel__indicator"></button>
-            <button class="carousel__indicator"></button>
-        </div>
-    </div>
-</body>
+         </div>
+      </div>
+   </body>
 </html>
